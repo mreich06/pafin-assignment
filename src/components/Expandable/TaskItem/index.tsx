@@ -45,12 +45,7 @@ interface TaskItemProps {
  * Description: This component creates the content inside each expandable card. It makes use of the React Spring
  * library to handle the animation of expanding and closing the card
  */
-const TaskItem = ({
-  title,
-  icon,
-  description,
-  steps,
-}: TaskItemProps) => {
+const TaskItem = ({ title, icon, description, steps }: TaskItemProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const ref = useRef<HTMLDivElement>(null);
@@ -58,9 +53,10 @@ const TaskItem = ({
     (step) => step.hasCompleted === true,
   ).length;
 
-  // expand/close card if caret icon is clicked
+  // expand/close card if caret icon is clicked. Unselect any selected steps
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
+    setActiveIndex(null);
   };
 
   const handleClick = (index: number) => {

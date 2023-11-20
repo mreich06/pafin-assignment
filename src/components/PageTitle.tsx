@@ -8,13 +8,11 @@ const StyledPageTitle = styled.span`
   ${media.isWeb`
     font-size: 32px; 
   `}
-
   ${media.isTablet`
     font-size: 26px;
   `}
-
   ${media.isMobile`
-    font-size: 18px; 
+    font-size: 20px; 
   `}
 `;
 

@@ -23,11 +23,7 @@ interface PageContainerProps {
  * Description: Container for entire page
  */
 const PageContainer = ({ children }: PageContainerProps): JSX.Element => {
-  return (
-    <StyledPageContainer>
-      {children}
-    </StyledPageContainer>
-  );
+  return <StyledPageContainer>{children}</StyledPageContainer>;
 };
 
 export default PageContainer;

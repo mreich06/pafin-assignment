@@ -16,19 +16,17 @@ const StyledHeader = styled.span`
   flex: 1 0 0;
   ${theme.text.taskItemHeader};
   ${media.isWeb`
-  font-size: 20px; 
-  line-height: 24px;
+    font-size: 20px; 
+    line-height: 24px;
 `}
-
   ${media.isTablet`
-  font-size: 16px;
-  line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
 `}
-
-${media.isMobile`
-  font-size: 12px; 
-  line-height: 16px;
-`}
+  ${media.isMobile`
+    font-size: 12px; 
+    line-height: 16px;
+  `}
 `;
 
 const StyledHeaderContainer = styled.div`
@@ -53,12 +51,10 @@ const StyledDescription = styled.span`
   font-size: 16px; 
   line-height: 24px;
 `}
-
   ${media.isTablet`
   font-size: 13px;
   line-height: 15px;
 `}
-
 ${media.isMobile`
   font-size: 10px; 
   line-height: 12px;

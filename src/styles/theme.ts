@@ -38,21 +38,16 @@ export const theme = {
 
     stepHeader: {
       color: "var(--text-main, #2e3f51)",
-      fontSize: "16px",
       fontStyle: "normal",
       fontWeight: 600,
-      lineHeight: "21px",
     },
     stepDescription: {
       color: "var(--grey-800, #596269)",
-      fontSize: "14px",
       fontStyle: "normal",
       fontWeight: 400,
-      lineHeight: "21px",
     },
     progressIndicator: {
       color: "var(--grey-400, #8c959d)",
-      fontSize: "14px",
       fontStyle: "normal",
       fontWeight: 400,
     },
@@ -96,12 +91,10 @@ export const theme = {
     },
     button: {
       color: "var(--white-100, #fff)",
-      fontSize: "14px",
       fontStyle: "normal",
       fontWeight: 600,
       leadingTrim: "both",
       textEdge: "cap",
-      lineHeight: "18px",
     },
   },
 };

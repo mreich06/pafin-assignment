@@ -35,14 +35,13 @@ const StyledCardsWrapper = styled.div`
 const StyledResponsiveMargin = styled.div`
   max-width: 1500px;
   ${media.isWeb`
-  margin: 60px `}
-
-  ${media.isTablet`
-  margin: 40px;
+    margin: 60px 112px 60px 112px;
   `}
-
+  ${media.isTablet`
+    margin: 40px;
+  `}
   ${media.isMobile`
-  margin: 20px;
+    margin: 20px;
   `}
 `;
 
@@ -70,11 +69,7 @@ const Calculation = (): JSX.Element => {
                 />
               ))}
             </StyledCardsWrapper>
-            <QuickAccessPanel
-              title={text.sidepanel.title}
-              cards={Cards}
-              
-            />
+            <QuickAccessPanel title={text.sidepanel.title} cards={Cards} />
           </StyledPageContents>
         </StyledResponsiveMargin>
       </PageContainer>

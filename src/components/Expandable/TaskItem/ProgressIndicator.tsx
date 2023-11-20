@@ -2,6 +2,7 @@ import styled, { useTheme } from "styled-components";
 import { CaretDown, CaretUp } from "@phosphor-icons/react";
 import text from "../../../text/index.json";
 import { theme } from "../../../styles/theme";
+import { media } from "../../../styles/breakpoints";
 
 interface ProgressBarProps {
   numStepsCompleted: number;
@@ -16,7 +17,16 @@ const StyledProgressIndicator = styled.div`
 `;
 
 const ProgressBarContainer = styled.div`
-  width: 60px;
+  ${media.isWeb`
+    width: 60px; 
+  `}
+  ${media.isTablet`
+    width: 40px;
+  `}
+
+  ${media.isMobile`
+    width: 15px; 
+  `}
   height: 6px;
   background-color: #dee1e3;
   border-radius: 3px;
@@ -47,6 +57,16 @@ const StyledProgressText = styled.span`
   text-edge: cap;
   line-height: 21px;
   letter-spacing: -0.14px;
+  ${media.isWeb`
+    font-size: 14px; `}
+
+  ${media.isTablet`
+    font-size: 12px ;
+  `}
+
+  ${media.isMobile`
+    font-size: 10px 
+  `}
 `;
 
 const StyledCaretUp = styled(CaretUp)`

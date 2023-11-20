@@ -13,21 +13,30 @@ const StyledButton = styled.div<{ disabled: boolean }>`
   border-radius: 4px;
   background: ${theme.colors.primary500};
   opacity: ${(props) => (props.disabled ? 0.4 : 1)};
-
   ${media.isTablet`
-  margin: 0px 60px 0px 60px;
-
-`}
+    margin: 0px 60px 0px 60px;
+  `}
 
   ${media.isMobile`
-margin: 0px 40px 0px 40px;
-
-`}
+    margin: 0px 40px 0px 40px;
+  `}
 `;
 
 const StyledButtonText = styled.span`
   ${theme.text.button};
   text-align: center;
+  ${media.isWeb`
+    font-size: 14px; 
+    line-height: 18px;
+  `}
+  ${media.isTablet`
+    font-size: 12px;
+    line-height: 14px;
+  `}
+  ${media.isMobile`
+    font-size: 10px;
+    line-height: 12px; 
+  `}
 `;
 
 interface ButtonProps {

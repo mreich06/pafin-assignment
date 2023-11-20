@@ -2,8 +2,8 @@ import { css, CSSObject } from "styled-components";
 
 // Media query breakpoints
 const breakpoints = {
-  web: "768px",
-  mobile: "392px",
+  web: "820px",
+  mobile: "480px",
 };
 
 type MediaFunction = (

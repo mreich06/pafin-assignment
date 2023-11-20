@@ -16,20 +16,17 @@ const StyledContainer = styled.div<StyledContainerProps>`
   display: flex;
   padding: 16px;
   ${media.isWeb`
-  gap: 77px; 
-  align-items: center;
-
-`}
-
+    gap: 77px; 
+    align-items: center;
+  `}
   ${media.isTablet`
-  gap:30px;
-  flex-direction: column;
-`}
-
-${media.isMobile`
-  gap: 20px; 
-  flex-direction: column;
-`}
+    gap:30px;
+    flex-direction: column;
+  `}
+  ${media.isMobile`
+    gap: 20px; 
+    flex-direction: column;
+  `}
   align-self: stretch;
   border-radius: 8px;
   border: 1px solid
@@ -72,6 +69,18 @@ const StyledNameContainer = styled.div`
 
 const StyledName = styled.span<{ disabled: boolean }>`
   ${theme.text.stepHeader};
+  ${media.isWeb`
+    font-size: 16px; 
+    line-height: 21px;
+  `}
+  ${media.isTablet`
+    font-size: 14px;
+    line-height: 18px;
+  `}
+  ${media.isMobile`
+    font-size: 12px;
+    line-height: 16px; 
+  `}
   opacity: ${(props) => (props.disabled ? 0.4 : 1)};
 `;
 
@@ -109,6 +118,18 @@ const StyledDescriptionContainer = styled.div`
 
 const StyledDescription = styled.span<{ disabled: boolean }>`
   ${theme.text.stepDescription};
+  ${media.isWeb`
+    font-size: 14px; 
+    line-height: 21px;
+  `}
+  ${media.isTablet`
+    font-size: 12px;
+    line-height: 16px;
+  `}
+  ${media.isMobile`
+    font-size: 10px;
+    line-height: 14px; 
+  `}
   opacity: ${(props) => (props.disabled ? 0.4 : 1)};
 `;
 
@@ -149,7 +170,7 @@ interface StepProps {
  *
  * Description: The individual step inside each TaskItem. Contains CheckCircle icon for completed steps or
  * CheckDashed icon for incomplete steps. Can be disabled if previous task items have not been completed
- * 
+ *
  * Props:
  * @param name: name of step
  * @param description: description of step, underneath name
