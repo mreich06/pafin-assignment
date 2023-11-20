@@ -2,7 +2,7 @@
 
 This project is a responsive frontend React application built with TypeScript, Styled Components and React Spring. It was created using this [Figma design](https://www.figma.com/file/QTi5BGNhVQ31qdOBMg4DUp/pafin-frontend-exercise?type=design&node-id=0%3A1&mode=design&t=Z0OHx31SY7yL9Jte-1)
 
-While writing the code for this assignment, I focused on maintaining modularity and avoiding repetition. The file structure is organized in a way that ensures readability. Variables, functions and names are given meaningful names to provide clarity and comments are provided, detailing the function of each component.
+While writing the code for this assignment, I focused on maintaining modularity and avoiding repetition. The file structure is organized in a way that ensures readability. Breakpoints are set for web, tablet and mobile views and I reorganized the components so that they fit neatly within the screen. Variables, functions and names are given meaningful names to provide clarity and comments are provided, detailing the function of each component.
 
 ## Setup
 1. Clone the repository
